@@ -8,12 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Article extends Model
 {
     use HasFactory;
+
     protected $table = 'articles';
     protected $fillable = [
         'nom',
         'descripcio',
-        'preu_compra',
-        'pre_venda',
+        'preu-compra',
+        'pre-venta',
         'enviament_domicili',
         'stock',
         'observations'
