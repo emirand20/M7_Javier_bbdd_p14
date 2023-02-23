@@ -1,5 +1,5 @@
 @extends('layouts.main-layout')
-@sections('page-title', 'Bienvenidos a la tienda')
+@sections('page-title', 'Bienvenidos a la tienda de tanques')
 @sections('content-area')
-    <h1>Bienvenidos a la tienda</h1>
+    <h1>Compra Tu Tanque</h1>
 @endsection

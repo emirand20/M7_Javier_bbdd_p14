@@ -15,13 +15,13 @@ class ArticleFactory extends Factory
         $faker =  Faker::create();
 
         return [
-            'nom' => $faker->unique()->text(50),
-            'descripcio' => $faker->paragraph(3),
-            'preu-compra' => $faker->randomFloat(2, 100, 1000),
-            'preu-venta' => $faker->randomFloat(2, 1100, 2000),
-            'enviament_domicili' => $faker->randomElement(['S','N']),
+            'nombre' => $faker->unique()->text(50),
+            'descripcion' => $faker->paragraph(3),
+            'precio-de-compra' => $faker->randomFloat(2, 100, 1000),
+            'país' => $faker->randomFloat(2, 1100, 2000),
+            'divisa' => $faker->randomElement(['S','N']),
             'stock' => $faker->numberBetween(0, 6000),
-            'observations' => $faker->optional()->paragraph(4)
+            'observaciones' => $faker->optional()->paragraph(4)
         ];
     }
 }

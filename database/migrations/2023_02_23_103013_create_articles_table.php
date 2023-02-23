@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
-            $table->string('nom', 50)->unique();
-            $table->text('descripcio');
-            $table->float('preu-compra', 7,2)->unsigned();
-            $table->float('preu-venta', 7,2)->unsigned();
-            $table->enum('enviament_domicili', ['S', 'N']);
+            $table->string('nombre', 50)->unique();
+            $table->text('descripcion');
+            $table->float('precio-de-compra', 7,2)->unsigned();
+            $table->float('país', 7,2)->unsigned();
+            $table->enum('divisa', ['S', 'N']);
             $table->integer('stock')->unsigned();
-            $table->text('observations')->nullable();
+            $table->text('observaciones')->nullable();
             $table->timestamps();
         });
     }
