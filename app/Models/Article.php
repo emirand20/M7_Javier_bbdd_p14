@@ -11,13 +11,13 @@ class Article extends Model
 
     protected $table = 'articles';
     protected $fillable = [
-        'nom',
-        'descripcio',
-        'preu-compra',
-        'pre-venta',
-        'enviament_domicili',
+        'nombre',
+        'descripcion',
+        'precio-de-compra',
+        'país',
+        'divisa',
         'stock',
-        'observations'
+        'observaciones'
     ];
     protected $hidden = [];
 }
